@@ -1,0 +1,8 @@
+[project]
+name = "simple-lottery"
+authors = ["Your Name <your@email.com>"]
+description = "A simple lottery contract where users buy tickets and a winner is picked."
+version = "0.1.0"
+
+[contracts.lottery]
+path = "contracts/lottery.clar"
