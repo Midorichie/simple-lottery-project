@@ -1,8 +1,17 @@
 [project]
 name = "simple-lottery"
-authors = ["Your Name <your@email.com>"]
-description = "A simple lottery contract where users buy tickets and a winner is picked."
-version = "0.1.0"
+description = "A simple lottery system using fungible tokens"
+authors = ["midorichie"]
+telemetry = false
+require-stacks-blockchain = ">=2.05.0"
 
 [contracts.lottery]
 path = "contracts/lottery.clar"
+depends_on = ["sip-010-trait"]
+
+[contracts.token]
+path = "contracts/token.clar"
+depends_on = ["sip-010-trait"]
+
+[contracts.sip-010-trait]
+path = "contracts/sip-010-trait.clar"
